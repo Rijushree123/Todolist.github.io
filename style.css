@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cursive sans-serif ;
+}
+body{
+    height:100vh;
+    background-image: url("https://media.istockphoto.com/id/1160569491/es/foto/reloj-de-bolsillo-viejo-sobre-fondo-oscuro.jpg?s=612x612&w=0&k=20&c=yxUhPV5XJG9zRGQZlzHckDehHED75HZEZY2q1TTqF-E=");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+#header-title{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.container{
+    width:50%;
+    margin-top: 7em;
+}
+@media screen and (max-width: 800px) {
+    .container{
+        width:70%;
+    }
+  }
+@media screen and (max-width: 650px) {
+    .container{
+        width:80%;
+    }
+  }
+@media screen and (max-width: 500px) {
+    .container{
+        width:99%;
+    }
+  }
+
+.task{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem ;
+    border-bottom:4px solid rgb(240, 240, 252) ;
+}
+
+.content{
+    display:1 1 0%;
+}
+.task .content .text {
+	font-size: 1.125rem;
+	width: 100%;
+    border-color: transparent;
+}
+.task .content .text:hover {
+    cursor:context-menu;
+}
+.task .actions {
+	display: flex;
+}
+.task .actions button {
+	margin: 0 0.5rem;
+	font-weight: 700;
+    font-size:0.9rem;
+    padding:2px 6px;
+	transition: 0.4s;
+}
